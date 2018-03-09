@@ -18,7 +18,7 @@ const Burger =(props)=>{
         return arr.concat(el); 
     },[])
     
-    if(maper.length==0){
+    if(maper.length===0){
         transformedObj=(
             <p>Please Start Adding Ingredients</p>
         )
