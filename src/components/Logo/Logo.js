@@ -8,7 +8,7 @@ class Logo extends Component{
     render(){
 
         return(
-            <div className={classes.Logo}>
+            <div className={classes.Logo} style={{height:this.props.height}}>
                 <img src={Burgerlogo} alt="My Burger"/>
             </div>
         )

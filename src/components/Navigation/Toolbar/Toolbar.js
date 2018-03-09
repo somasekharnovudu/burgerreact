@@ -11,8 +11,12 @@ class Toolbar extends Component{
         return(
             <header className={classes.Toolbar}>
                 <div>Menu</div>
-                <Logo/>
-                <Navigationitems/>
+                <div style={{height:"80%"}}>
+                    <Logo/>
+                </div>
+                <nav>
+                    <Navigationitems/>
+                </nav>
             </header>
         )
     }
