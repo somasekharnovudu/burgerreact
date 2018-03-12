@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import classes from './Toolbar.css';
 import Logo from '../../Logo/Logo';
 import Navigationitems from '../Navigationitems/Navigationitems';
+import Drawertoggle from '../Sidedrawer/Drawertoggle/Drawertoggle';
 
 class Toolbar extends Component{
 
@@ -10,12 +11,12 @@ class Toolbar extends Component{
         
         return(
             <header className={classes.Toolbar}>
-                <div>Menu</div>
+                <Drawertoggle clicked={this.props.drawertoggleclicked}/>
                 <div style={{height:"80%"}}>
                     <Logo/>
                 </div>
-                <nav>
-                    <Navigationitems/>
+                <nav className={classes.desktoponly}>
+                    <Navigationitems />
                 </nav>
             </header>
         )

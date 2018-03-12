@@ -3,7 +3,7 @@ import Aux from '../../hoc/Auxillary';
 import Burger from '../../components/Burger/Burger';
 import Buildcontrols from '../../components/Burger/Buildcontrols/Buildcontrols';
 import Modal from '../../components/UI/Modal/Modal';
-import Ordersummary from '../../components/Burger/Ordersummary/Urdersummary';
+import Ordersummary from '../../components/Burger/Ordersummary/Ordersummary';
 
 const INGREDIENT_PRICES={
     salad:0.5,
@@ -71,7 +71,7 @@ class BurgerBuilder extends Component {
         alert("you continue!!")
     }
     purchasecancel=()=>{
-        alert("you cancelled it");
+        this.purchaseClosed();
     }
 
     render(){
