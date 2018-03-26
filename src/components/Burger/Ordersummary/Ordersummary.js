@@ -13,7 +13,8 @@ class Ordersummary extends Component{
                     {this.props.ordersummary[key]}
                 </li>
             )
-        })
+        });
+        console.log(this.props)
 
 
         return(

@@ -24,6 +24,10 @@ class BurgerBuilder extends Component {
         purchasable:false,
         purchasing:false
     }
+
+    componentDidMount(){
+        console.log(this.props);
+    }
     
     purchaseHandler=()=>{
         this.setState({purchasing:true});
@@ -68,7 +72,7 @@ class BurgerBuilder extends Component {
 
     }
     purchaseconfirm=()=>{
-        alert("you continue!!")
+        alert("you continue!!");
     }
     purchasecancel=()=>{
         this.purchaseClosed();
